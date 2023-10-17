@@ -1,0 +1,285 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the navigation bar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px; 
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 3rem; 
+    font-weight: bold;
+    
+}
+
+/* Styling for the main content area */
+main {
+    padding: 60px 20px;
+}
+
+/* Basic styling for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Design: Adjust as needed */
+@media (max-width: 320px) {
+    .nav-links {
+        display: none;
+    }
+
+    .navbar.active .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .navbar.active .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+/* Default link styles */
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s; /* Add a smooth transition effect */
+}
+
+/* Change link color on hover */
+.nav-links a:hover {
+    color: #ff7f00; /* Change the color to your desired hover color */
+}
+
+/* Add padding to the right side of navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding-right: 20px; /* Add padding to the right side */
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+
+/*nextpart
+
+text
+
+                startsnow*/
+
+
+/* Your existing CSS styles */
+
+/* Styles for the container with background image and animation */
+.container {
+    background-image: url('miet.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 520px; 
+    position: relative;
+}
+
+.background-image {
+    background: rgba(0, 0, 0, 0); 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.animated-text {
+    font-size: 50px;
+    color: #fff;
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Styles for the "About Us" section */
+.about-us {
+    background-color: #f4f4f4; 
+    padding: 40px;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.about-us p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+
+/* Styles for the "Past Events" section */
+.past-events {
+    background-color: #f9f9f9; /* Add a background color to distinguish the section */
+    padding: 40px;
+    text-align: center;
+}
+
+.past-events h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.event-details {
+    flex: 1; 
+}
+.event img {
+    width: 200px; /* Adjust image size as needed */
+    height: auto;
+    margin-right: 20px;
+}
+
+.event-details h3 {
+    font-size: 20px;
+    color: #666;
+}
+
+.event-details p {
+    font-size: 16px;
+    color: #888;
+}
+
+
+
+/* Styles for the "Team Members" section */
+.team-members {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.team-members h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.member-image {
+    flex: 1; /* Take up some space */
+    text-align: center;
+    cursor: pointer;
+}
+
+.member-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Create a circular image */
+    transition: transform 0.2s; /* Add a transform transition for the image */
+}
+
+.member-image img:hover {
+    transform: scale(1.1); /* Grow the image on hover */
+}
+
+.member-details {
+    flex: 2; /* Expand to fill available space */
+    text-align: left;
+}
+
+.member-details h3 {
+    font-size: 20px;
+    color: #666;
+}
+
+.member-details p {
+    font-size: 16px;
+    color: #888;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Add font-awesome icons */
+i.fab.fa-instagram:before { content: "\f16d"; }
+i.fab.fa-linkedin:before { content: "\f08c"; }
+i.fab.fa-github:before { content: "\f09b"; }
